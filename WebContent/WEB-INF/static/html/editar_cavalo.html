@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+
+<meta http-equiv='Content-Type' content='text/html' ; charset='utf-8'>
+
+<!-- Required meta tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+	
+
+
+<title>Editar Cavalo</title>
+</head>
+<body>
+
+	<h1 style="text-align: center;">Editar Cavalo</h1>
+	<br>
+	<br>
+	<br>
+
+	<div class="container-fluid"">
+		<!--
+				private Integer id;
+	private String nome;
+	private Float altura;
+	private String corPelo;
+	private Float peso;
+	private String alimentacao;
+	private Raca raca;
+			
+		
+		<
+		
+		  -->
+		
+		<form method="post" action="editar_cavalo?id={{value_id_form_edit_cavalo}}">
+			<div class="form-row">
+				<div class="col-md-4 mb-3">
+					<label>Nome*</label> <input {{value_name}} type="text" class="form-control"
+						placeholder="Nome Em Portugês" name='nome' required>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label>Altura*</label> <input  {{value_altura}} class="form-control" type="number"
+						max="3" min="0" step="0.0" id="example-number-input" name="altura" required>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label>Cor Pelo*</label> <input  {{value_cor_pelo}} type="text" class="form-control"
+						placeholder="Marrom" name='corPelo' required>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="col-md-4 mb-3">
+					<label>Peso*</label> <input  {{value_peso}} class="form-control" placeholder="Kg"
+						type="number" min="0" id="example-number-input" name="peso" required>
+				</div>
+
+				<div class="col-md-4 mb-3">
+					<label>Alimentacao*</label> <input  {{value_alimentacao}} type="text" class="form-control"
+						placeholder="Cenouras" name="alimentacao" required>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label class="mr-sm-2" for="inlineFormCustomSelect">Raça*</label>
+					<select class="custom-select mb-2 mr-sm-2 mb-sm-0" name="raca" 
+						id="inlineFormCustomSelect" >
+						
+						{% block racas_select %}						
+						
+						<!-- <option value="1" selected>One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+ -->					</select>
+
+				</div>
+
+			</div>
+
+			<br>
+			<button class="btn btn-primary" type="submit">Enviar</button>
+			<a href="/CRUD_SERVELT_JAVA/" class="btn btn-danger" role="button" aria-pressed="true" value="⇠" >Cancelar</a>
+		</form>
+	</div>
+
+
+
+
+
+
+	
+    
+  
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+
+<meta http-equiv='Content-Type' content='text/html' ; charset='utf-8'>
+
+<!-- Required meta tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+
+<title>Inserir Nova Raça</title>
+
+
+
+</head>
+<body>
+	<h1 style="text-align: center;">Inserir Nova Raça</h1>
+	<br>
+	<br>
+	<br>
+
+	<div class="container-fluid"">
+		<!-- 	public String nomeBr;
+	public String nomeEng;
+	private String paisOrigem;
+	private String uso;
+	private String temperamento;
+	private String breveHistoria; -->
+		<form method="post" action="cadastra_raca">
+			<div class="form-row">
+				<div class="col-md-4 mb-3">
+					<label>Nome*</label> <input type="text" class="form-control"
+						placeholder="Nome Em Portugês" name='nomeBr' required>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label>Nome</label> <input type="text" class="form-control"
+						placeholder="Nome Em Inglês" name='nomeEng'>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label>Uso*</label> <input type="text" class="form-control"
+						placeholder="Esporte,Sela..." name='uso' required>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="col-md-4 mb-3">
+				<label >País de Origem*</label> <input type="text"
+						class="form-control" placeholder="Brasil" name="paisOrigem" required>
+				</div>
+				
+				<div class="col-md-4 mb-3">
+				<label >Temperamento*</label> <input type="text"
+						class="form-control" placeholder="Brasil" name="temperamento" required>
+				</div>
+				
+				
+			</div>
+			
+			<div class="form-row">
+			<div class="col-md-6 mb-6">
+				<label >Breve História*</label> <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" name="breveHistoria" required></textarea>
+				</div>
+			</div>
+		<br>
+  <button class="btn btn-primary" type="submit">Enviar</button>
+			<a href="/CRUD_SERVELT_JAVA/" class="btn btn-danger" role="button" aria-pressed="true" value="⇠" >Cancelar</a>
+		</form>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+</body>
+</html>
